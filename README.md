@@ -37,3 +37,7 @@ Contributions are welcome! If you would like to add new questions, improve exist
 This repository is licensed under the [MIT License](LICENSE), allowing for open collaboration and sharing of knowledge.
 
 Happy learning and good luck with your deep learning interviews!
+
+
+## **About Me**:
+I’m a seasoned Data Scientist and founder of [TowardsMachineLearning.Org](https://towardsmachinelearning.org/). I've worked on various Machine Learning, NLP, and cutting-edge deep learning frameworks to solve numerous business problems.
