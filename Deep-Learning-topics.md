@@ -5,13 +5,13 @@ Ans: Padding is a technique used in convolutional neural networks (CNNs) to pres
    - In "same" padding, the padding is applied in such a way that the output size of the convolutional layer is the same as the input size (when the stride is 1).
    - If the convolutional operation has a stride greater than 1, "same" padding will add padding to ensure that the output size is adjusted accordingly.
    - The formula for calculating the output size with "same" padding is:
-     \[ \text{output size} = \frac{\text{input size}}{\text{stride}} \]
+     $$\ \text{output size} = \frac{\text{input size}}{\text{stride}} \$$
    - Example: Let's say you have a 5x5 input image and you apply a 3x3 filter with a stride of 1. With "same" padding, the output will also be a 5x5 matrix.
 
 2. **Valid Padding:**
    - In "valid" padding, no padding is added to the input. As a result, the spatial dimensions of the output will be smaller than the input.
    - The formula for calculating the output size with "valid" padding is:
-     \[ \text{output size} = \frac{\text{input size} - \text{filter size} + 1}{\text{stride}} \]
+     $$\ \text{output size} = \frac{\text{input size} - \text{filter size} + 1}{\text{stride}} \$$
    - Example: Using the same 5x5 input image and a 3x3 filter with a stride of 1, the output size will be \(5 - 3 + 1 = 3\), so the output will be a 3x3 matrix.
 
 **Real-Time Example:**
@@ -81,7 +81,7 @@ Ans: Batch Normalization (BN) is a technique used in neural networks to normaliz
 
 In summary, Batch Normalization helps prevent overfitting by introducing regularization through the normalization process, reducing sensitivity to weight initialization, enabling the use of larger learning rates, and stabilizing the training of deeper networks. These effects collectively contribute to a more robust and generalizable model.
 
-# Q4. Difference Batch Normalization, and Layer Normalization?
+# Q4. What's the difference between Batch Normalization, and Layer Normalization?
 Ans: Batch Normalization (BN) and Layer Normalization (LN) are both normalization techniques used in neural networks to improve training stability and speed. While they share the goal of normalizing intermediate activations, they differ in how normalization is applied. Here are the key differences between Batch Normalization and Layer Normalization:
 
 1. **Normalization Scope:**
@@ -148,8 +148,7 @@ Leaky ReLU addresses the dying ReLU problem by allowing a small, positive slope 
 The mathematical expression for Leaky ReLU is:
 
 $$f(x) = \begin{cases} 
-x & \text{if } x \geq 0 \\
-\alpha x & \text{if } x < 0$$
-where \( \alpha \) is a small positive constant, usually a small fraction like 0.01.
+x & \text{if } x \geq 0 \\ \alpha x & \text{if } x < 0$$
+where $\( \alpha \)$ is a small positive constant, usually a small fraction like 0.01.
 
 Leaky ReLU has been found to be effective in preventing neurons from becoming inactive during training, promoting better learning and avoiding the issues associated with the dying ReLU problem. However, it's worth noting that the choice of activation function depends on the specific task and dataset, and researchers often experiment with different activation functions to find the one that works best for a given scenario.
